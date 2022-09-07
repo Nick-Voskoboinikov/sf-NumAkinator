@@ -22,7 +22,7 @@ function RussianNumber(inputNumber) {
     let resultingString=Math.abs(inputNumber);
     
     // 1
-    if (resultingString > -1 && resultingString < 10 && resultingString % 10 === 0){
+    if (resultingString === 0){
     part1 = 'ноль';
     } else if (!(resultingString > 10 &&resultingString<20) && !(resultingString% 100 > 10 &&resultingString% 100 < 20) &&resultingString% 10 === 1){
     part1 = 'один';
