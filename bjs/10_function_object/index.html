@@ -7,6 +7,7 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -16,18 +17,26 @@
                 <div class="card-header">
                     <p class="m-0">Окно результатов генерации</p>
                 </div>
-                <div class="card-body">
+                <div class="card-body" id="content">
                     <div class="row">
                         <div class="col">
                             <h3 class="card-title"><span id="surnameOutput">Генерация фамилии</span></h3>
                             <h4>Имя: <span id="firstNameOutput">Иван</span></h4>
+                            <h5>Отчество: <span id="secondName">Петрович</span></h5>
                             <p>
                                 <span id="genderOutput">Генерация пола</span>
                                 <span>, </span>
                                 <span id="birthYearOutput">Генерация года рождения</span>
+                                <span>, </span>
+                                Профессия: <span id="jobName">кто таков</span>
+                                <span>, </span>
+                                д.р: <span id="birthDate">01 января</span>
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="card-header">
+                    <p>Сброс<sup title="Что бы это ни значило">?</sup>:&nbsp;<button title="Новые данные (или [F5] - перезагрузка страницы)">&#x21BB;</button>&nbsp;<button title="Печать">&#128424;&#65039;</button>&nbsp;<button title="Восстановить умолчания">&#9851;</button></p>
                 </div>
             </div>
         </div>
